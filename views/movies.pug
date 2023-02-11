@@ -1,0 +1,21 @@
+doctype
+html
+    head
+        title Movies 
+    body 
+        h1 Movies
+        p Top Ranked Movies:
+        table(width='500px')
+            tr 
+                td Id
+                td Name 
+                td Rating
+            each movie in movies 
+                tr 
+                    td= movie.id 
+                    td= movie.name 
+                    td= movie.rating
+        br
+        hr
+        footer 
+            h5 Copyright &copy; 2022
